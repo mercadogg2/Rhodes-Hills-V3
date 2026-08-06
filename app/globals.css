@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-obsidian: #FFFFFF;
+  --color-slate: #F9F9F9;
+  --color-navy: #0A192F;
+  --color-gold: #C5A059;
+  --color-gold-hover: #A78440;
+  --color-quartz: #4B5563;
+  --color-quartz-light: #9CA3AF;
+
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
