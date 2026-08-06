@@ -11,6 +11,7 @@ import { VIPConcierge } from '@/components/VIPConcierge';
 import curatedImg from '@/src/assets/images/curated_connections_lounge_1786038228918.jpg';
 import ruggedImg from '@/src/assets/images/rugged_elegance_desert_villa_1786038393382.jpg';
 import reservationBg from '@/src/assets/images/reservation_callout_bg_1786040497480.jpg';
+import builderImg from '@/src/assets/images/builder_legacy.jpg';
 
 export default function Home() {
   return (
@@ -130,7 +131,14 @@ export default function Home() {
             <div>
               <FadeIn direction="right">
                 <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4 text-black">Behind Rhodes Hills</h2>
-                <h3 className="font-sans text-xl md:text-2xl text-gold mb-8 font-light italic">A Legacy Building the Valley.</h3>
+                <div className="relative w-full h-[300px] md:h-[420px] rounded-sm overflow-hidden mt-6 shadow-sm">
+                  <Image 
+                    src={builderImg} 
+                    fill 
+                    alt="Behind Rhodes Hills" 
+                    className="object-cover"
+                  />
+                </div>
               </FadeIn>
             </div>
             <div className="space-y-8 text-quartz text-lg leading-relaxed font-light">
