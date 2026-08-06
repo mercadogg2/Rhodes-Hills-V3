@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { Navbar } from '@/components/Navbar';
@@ -12,10 +11,8 @@ import { VIPConcierge } from '@/components/VIPConcierge';
 import curatedImg from '@/src/assets/images/curated_connections_lounge_1786038228918.jpg';
 import ruggedImg from '@/src/assets/images/rugged_elegance_desert_villa_1786038393382.jpg';
 import reservationBg from '@/src/assets/images/reservation_callout_bg_1786040497480.jpg';
-import aerialImg from '@/src/assets/images/rhodes_hills_masterplan_aerial_1786038552822.jpg';
 
 export default function Home() {
-  const [builderImgSrc, setBuilderImgSrc] = useState<string | typeof aerialImg>("https://i.postimg.cc/mD1v0XhS/Whats-App-Image-2026-08-06-at-16-29-10.jpg");
   return (
     <main className="min-h-screen bg-obsidian text-navy">
       <Navbar />
@@ -34,7 +31,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-obsidian to-transparent" />
         
-        <div className="relative z-10 max-w-5xl text-left" style={{ marginLeft: '15px', paddingTop: '25px' }}>
+        <div className="relative z-10 max-w-5xl text-left" style={{ marginLeft: '15px', paddingTop: '68px' }}>
           <FadeIn>
             <h1 
               className="font-display text-white mb-6 tracking-tight text-left"
@@ -134,19 +131,6 @@ export default function Home() {
               <FadeIn direction="right">
                 <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4 text-black">Behind Rhodes Hills</h2>
                 <h3 className="font-sans text-xl md:text-2xl text-gold mb-8 font-light italic">A Legacy Building the Valley.</h3>
-                <div className="relative w-full h-[300px] md:h-[420px] rounded-sm overflow-hidden mt-6 shadow-sm">
-                  <Image 
-                    src={builderImgSrc} 
-                    fill 
-                    alt="Behind Rhodes Hills - A Legacy Building the Valley" 
-                    className="object-cover"
-                    unoptimized
-                    referrerPolicy="no-referrer"
-                    onError={() => {
-                      setBuilderImgSrc(aerialImg);
-                    }}
-                  />
-                </div>
               </FadeIn>
             </div>
             <div className="space-y-8 text-quartz text-lg leading-relaxed font-light">
